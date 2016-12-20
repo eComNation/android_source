@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:id="@+id/imgProduct"
+        android:contentDescription="@string/product_image"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSKU"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:textColor="@color/SecondaryColorText" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtProductName"
+            android:textColor="@color/PrimaryColorText"
+            android:textSize="@dimen/abc_text_size_menu_material"
+            android:gravity="left"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblSize"
+                android:gravity="right"
+                android:textSize="@dimen/abc_text_size_caption_material"
+                android:textColor="@color/SecondaryColorText" />
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblQty"
+                android:textColor="@color/SecondaryColorText"
+                android:textSize="@dimen/abc_text_size_caption_material"
+                android:layout_marginRight="2dp"
+                android:text="@string/qty" />
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtQty"
+                android:gravity="right"
+                android:textSize="@dimen/abc_text_size_caption_material"
+                android:textColor="@color/PrimaryColorText"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right|bottom"
+        android:layout_marginLeft="10dp">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDiscount"
+            android:visibility="invisible"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:textColor="@color/DashBoardRed" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPrice"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:textColor="@color/PrimaryColorText"
+            android:textStyle="bold" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:id="@+id/txtOldPrice"
+            android:textColor="@color/SecondaryColorText"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+    </LinearLayout>
+</LinearLayout>

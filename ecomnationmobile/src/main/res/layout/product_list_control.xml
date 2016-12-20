@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/LIGHT_BACK"
+        android:id="@+id/similarBlock"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/txtSimilar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:text="@string/similar_products"
+            android:textColor="@color/PrimaryColorText"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/PrimaryColorText" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/similarScroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:divider="@drawable/horizontal_divider"
+                android:gravity="center"
+                android:showDividers="middle"
+                android:id="@+id/gridSimilar"
+                android:layout_height="wrap_content"/>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/LIGHT_BACK"
+        android:id="@+id/relatedBlock"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:text="@string/related_products"
+            android:textColor="@color/PrimaryColorText"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/PrimaryColorText" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/relatedScroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:divider="@drawable/horizontal_divider"
+                android:gravity="center"
+                android:showDividers="middle"
+                android:id="@+id/gridRelated"
+                android:layout_height="wrap_content"/>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/LIGHT_BACK"
+        android:gravity="center_horizontal"
+        android:id="@+id/recentBlock"
+        android:orientation="vertical">
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:text="@string/recently_viewed_products"
+            android:textColor="@color/PrimaryColorText"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/PrimaryColorText" />
+
+        <HorizontalScrollView
+            android:id="@+id/recentScroll"
+            android:foregroundGravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:divider="@drawable/horizontal_divider"
+                android:gravity="center"
+                android:showDividers="middle"
+                android:id="@+id/gridRecent"
+                android:layout_height="wrap_content"/>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

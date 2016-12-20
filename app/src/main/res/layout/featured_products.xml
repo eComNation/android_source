@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/LIGHT_BACK">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ecomnationmobile.library.Control.GridViewWithHeaderAndFooter
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/productGrid"
+            android:numColumns="2"
+            android:verticalSpacing="2dp"
+            android:horizontalSpacing="2dp"
+            android:background="@color/LIGHT_BACK" />
+
+        <include
+            layout="@layout/empty_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/emptyView" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/progress_bar"
+            android:id="@+id/progressBar"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/headerView"
+        android:layout_gravity="top"
+        android:visibility="gone"
+        android:background="@color/LIGHT_BACK"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/sortnCount"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/filterSort">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/filter"
+                    android:background="@drawable/white_click"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="5dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        android:animateLayoutChanges="true"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <com.ecomnationmobile.library.Control.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/filter_products"
+                            android:id="@+id/txtFilter"
+                            android:textColor="@color/PrimaryColorText"
+                            android:textSize="@dimen/abc_text_size_caption_material"
+                            android:paddingLeft="10dp" />
+
+                        <com.ecomnationmobile.library.Control.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtSelectedFilter"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:textColor="@color/SecondaryColorText"
+                            android:visibility="gone"
+                            android:textSize="@dimen/abc_text_size_caption_material"
+                            android:paddingLeft="10dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageFilter"
+                        android:src="@drawable/filter"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sort"
+                    android:background="@drawable/white_click"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp">
+
+                    <com.ecomnationmobile.library.Control.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sort_by"
+                        android:id="@+id/txtSort"
+                        android:textColor="@color/PrimaryColorText"
+                        android:textSize="@dimen/abc_text_size_caption_material"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp" />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sortSpinner"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp">
+
+                <com.ecomnationmobile.library.Control.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtProductCount"
+                    android:textColor="@color/PrimaryColorText"
+                    android:textSize="@dimen/abc_text_size_caption_material"
+                    android:textStyle="bold" />
+
+                <com.ecomnationmobile.library.Control.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/products_found"
+                    android:id="@+id/textView8"
+                    android:textColor="@color/SecondaryColorText"
+                    android:textSize="@dimen/abc_text_size_caption_material" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/oldDataProgress"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress"
+        style="@android:style/Widget.Holo.ProgressBar"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

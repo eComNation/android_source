@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/WHITE"
+    android:showDividers="end"
+    android:divider="@drawable/vertical_divider"
+    android:paddingTop="5dp">
+
+    <com.ecomnationmobile.library.Control.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLabel"
+        android:textColor="@color/SecondaryColorText"
+        android:textSize="@dimen/abc_text_size_caption_material" />
+
+    <com.ecomnationmobile.library.Control.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtText"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:drawableRight="@drawable/dropdown_arrow"
+        android:paddingRight="15dp"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:textColor="@color/PrimaryColorText"
+        android:background="@color/TRANSPARENT" />
+
+</LinearLayout>

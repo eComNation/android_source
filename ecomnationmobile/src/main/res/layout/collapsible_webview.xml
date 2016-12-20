@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <WebView
+        android:id="@+id/txtValue"
+        android:textColor="@color/PrimaryColorText"
+        android:singleLine="false"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:background="@color/WHITE"
+        android:layout_gravity="bottom|right"
+        android:layout_height="wrap_content">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:text="...."
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:id="@+id/txtExtra"
+            android:textColor="@color/PrimaryColorText"
+            android:layout_height="wrap_content" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:clickable="true"
+            android:id="@+id/txtShowHide"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</FrameLayout>

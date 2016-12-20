@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@color/PrimaryColor"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="match_parent"
+            android:id="@+id/btnBack"
+            android:src="@drawable/icn_back"
+            android:background="@drawable/transparent_click" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtHeader"
+            android:layout_weight="1"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:text="@string/add_review"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/WHITE"
+                android:showDividers="middle"
+                android:divider="@drawable/vertical_divider">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:orientation="horizontal">
+
+                    <com.ecomnationmobile.library.Control.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/PrimaryColorText"
+                        android:textSize="@dimen/abc_text_size_caption_material"
+                        android:layout_weight="1"
+                        android:text="@string/rating"
+                        android:gravity="center_vertical"
+                        android:paddingRight="20dp" />
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/customRatingBar"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:id="@+id/ratingBar" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <com.ecomnationmobile.library.Control.CustomEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title"/>
+
+                <com.ecomnationmobile.library.Control.CustomEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/content"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/abc_action_button_min_height_material"
+            android:id="@+id/btnSubmit"
+            android:background="@drawable/button_click"
+            android:textColor="@color/WHITE"
+            android:textStyle="bold"
+            android:textSize="@dimen/abc_text_size_menu_material"
+            android:text="@string/submit"/>
+    </LinearLayout>
+
+</LinearLayout>

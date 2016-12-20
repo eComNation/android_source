@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:divider="@drawable/vertical_divider"
+            android:showDividers="middle|end"
+            android:layout_height="match_parent"
+            android:background="@color/WHITE">
+
+            <com.ecomnationmobile.library.Control.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/shippingFirstName" />
+
+            <com.ecomnationmobile.library.Control.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/shippingLastName" />
+
+            <com.ecomnationmobile.library.Control.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/shippingMobile" />
+
+            <com.ecomnationmobile.library.Control.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/shippingAddress1" />
+
+            <com.ecomnationmobile.library.Control.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/shippingAddress2" />
+
+            <com.ecomnationmobile.library.Control.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/shippingCity" />
+
+            <com.ecomnationmobile.library.Control.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/shippingPinCode" />
+
+            <com.ecomnationmobile.library.Control.CustomSpinner
+                android:layout_width="match_parent"
+                android:id="@+id/country"
+                android:layout_height="wrap_content"/>
+
+            <com.ecomnationmobile.library.Control.CustomSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/stateSpinner"/>
+
+            <com.ecomnationmobile.library.Control.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/stateText"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:background="@color/WHITE"
+            android:visibility="gone">
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSubscription"
+                android:layout_weight="1"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:text="@string/same_billing_address"
+                android:textColor="@color/PrimaryColorText" />
+
+            <ToggleButton
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:id="@+id/btnCopyAddress"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/check" />
+        </LinearLayout>
+</LinearLayout>

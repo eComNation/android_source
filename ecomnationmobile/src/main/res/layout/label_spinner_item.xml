@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/WHITE"
+    android:divider="@drawable/vertical_divider"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:showDividers="end">
+
+    <com.ecomnationmobile.library.Control.MyTextView
+        android:id="@+id/txtLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/SecondaryColorText"
+        android:textSize="@dimen/abc_text_size_caption_material" />
+
+    <Spinner
+        android:id="@+id/txtSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/PrimaryColorText"
+        android:textSize="@dimen/abc_text_size_small_material" />
+
+</LinearLayout>

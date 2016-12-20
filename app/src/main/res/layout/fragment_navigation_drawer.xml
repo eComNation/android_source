@@ -1,0 +1,117 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:descendantFocusability="blocksDescendants"
+    class="com.eComNation.Fragment.NavigationDrawerFragment"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/MenuBackground"
+            android:layout_width="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="200dp"
+                android:clickable="true"
+                android:id="@+id/myAccountLayout">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/store_logo"
+                    android:id="@+id/storeicon"
+                    android:layout_gravity="center"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"/>
+
+                <com.ecomnationmobile.library.Control.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shop_for"
+                    android:textSize="@dimen/abc_text_size_caption_material"
+                    android:textStyle="bold"
+					android:textColor="@color/MenuTextColor"
+                    android:layout_weight="1"
+                    android:layout_gravity="bottom|left"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="10dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgHomeScreen"
+                    android:layout_gravity="bottom|right"
+                    android:padding="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/home"
+                    android:background="@drawable/rounded_click" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/DrawerItemBack"/>
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:id="@+id/viewFlipper"
+                android:background="@color/DrawerItemBack"
+                android:measureAllChildren="false"
+                android:layout_height="wrap_content">
+
+                <fragment
+                    android:id="@+id/mainDrawer"
+                    class="com.eComNation.Fragment.DrawerFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </ViewFlipper>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/DrawerItemBack"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/DrawerItemBack"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/drawerList"
+                android:choiceMode="singleChoice"
+                android:divider="@drawable/menu_divider" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/DrawerItemBack"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

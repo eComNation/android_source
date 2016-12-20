@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:showDividers="beginning|end"
+    android:divider="@drawable/vertical_divider"
+    android:background="@color/WHITE"
+    android:layout_marginBottom="15dp"
+    android:layout_height="match_parent">
+
+    <com.ecomnationmobile.library.Control.MyTextView
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:text="@string/review_title"
+        android:textColor="@color/PrimaryColorText"
+        android:textSize="@dimen/abc_text_size_menu_material"
+        android:layout_height="wrap_content" />
+
+    <com.ecomnationmobile.library.Control.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/noReviewText"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_15"
+        android:textColor="@color/SecondaryColorText"
+        android:text="@string/no_reviews" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/reviewList">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviewLinks"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/first"
+            android:text="@string/first"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/SecondaryColorText"
+            android:textSize="@dimen/text_size_13"
+            android:background="@drawable/simple_click"
+            android:clickable="true"
+            android:visibility="invisible"
+            android:padding="5dp"/>
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/prev"
+            android:text="@string/prev"
+            android:textColor="@color/SecondaryColorText"
+            android:textSize="@dimen/text_size_13"
+            android:background="@drawable/simple_click"
+            android:clickable="true"
+            android:visibility="invisible"
+            android:padding="5dp"/>
+
+        <Space
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/next"
+            android:text="@string/next"
+            android:textColor="@color/SecondaryColorText"
+            android:textSize="@dimen/text_size_13"
+            android:background="@drawable/simple_click"
+            android:clickable="true"
+            android:visibility="invisible"
+            android:padding="5dp"/>
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/last"
+            android:layout_marginLeft="5dp"
+            android:text="@string/last"
+            android:textColor="@color/SecondaryColorText"
+            android:textSize="@dimen/text_size_13"
+            android:background="@drawable/simple_click"
+            android:clickable="true"
+            android:visibility="invisible"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+    <com.ecomnationmobile.library.Control.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addReview"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="@dimen/abc_text_size_menu_material"
+        android:textColor="@color/PrimaryColorText"
+        android:text="@string/write_review"
+        android:background="@drawable/simple_click"
+        android:clickable="true" />
+
+</LinearLayout>

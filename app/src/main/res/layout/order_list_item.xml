@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="2dp"
+        android:gravity="center_vertical">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/orderid"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:textSize="@dimen/abc_text_size_menu_material"
+            android:textColor="@color/PrimaryColorText"
+            android:textStyle="bold" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/orderstatus"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:visibility="invisible"
+            android:textColor="@color/WHITE"
+            android:background="@color/SecondaryColor" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/amount"
+            android:layout_gravity="right"
+            android:layout_weight="10"
+            android:gravity="right"
+            android:textColor="@color/PrimaryColorText"
+            android:textSize="@dimen/abc_text_size_menu_material"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="2dp">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/customerdetails"
+            android:textColor="@color/PrimaryColorText"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textStyle="bold" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCity"
+            android:textColor="@color/GRAY"
+            android:layout_weight="1"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:ellipsize="end"
+            android:singleLine="true" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemcount"
+            android:gravity="right"
+            android:textColor="@color/GRAY"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="2dp">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/orderdatetime"
+            android:textColor="@color/GRAY"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:id="@+id/headerLayout"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/storeImage"
+            android:layout_gravity="center"
+            android:src="@drawable/alert"
+            android:adjustViewBounds="true" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtHeader"
+            android:textSize="@dimen/text_size_17"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/WHITE"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <com.ecomnationmobile.library.Control.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtBody"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_size_15"
+        android:textIsSelectable="false"
+        android:background="@color/WHITE"
+        android:textColor="@color/GRAY" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right"
+        android:padding="10dp"
+        android:background="@color/WHITE">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:minWidth="60dp"
+            android:layout_height="30dp"
+            android:text="@string/yes"
+            android:id="@+id/txtYes"
+            android:padding="5dp"
+            android:gravity="center"
+            android:background="@drawable/grey_click" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:minWidth="60dp"
+            android:layout_height="30dp"
+            android:text="@string/no"
+            android:id="@+id/txtNo"
+            android:padding="5dp"
+            android:background="@drawable/grey_click"
+            android:gravity="center" />
+
+    </LinearLayout>
+</LinearLayout>

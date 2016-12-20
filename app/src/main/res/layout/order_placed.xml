@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:gravity="center_vertical"
+        android:background="@color/PrimaryColor">
+
+        <ImageButton
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="match_parent"
+            android:id="@+id/btnBack"
+            android:background="@drawable/transparent_click"
+            android:src="@drawable/icn_back"
+            />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thank_you"
+            android:id="@+id/txtHeader"
+            android:paddingLeft="20dp"
+            android:textColor="@color/WHITE"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/thank_you_order"
+                android:id="@+id/textView14"
+                android:padding="20dp"
+                android:textColor="@color/PrimaryColorText"
+                android:textSize="@dimen/abc_text_size_small_material" />
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/details_copy"
+                android:id="@+id/textView15"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/PrimaryColorText"
+                android:textSize="@dimen/abc_text_size_small_material" />
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView16"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/PrimaryColorText"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textStyle="bold" />
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView25"
+                    android:textSize="@dimen/abc_text_size_medium_material"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="10dp"
+                android:paddingTop="20dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/orderDetails">
+            </FrameLayout>
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/continue_shopping"
+                android:id="@+id/txtContinue"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/button_click_2"
+                android:textColor="@color/SecondaryColor"
+                android:textSize="@dimen/abc_text_size_small_material" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

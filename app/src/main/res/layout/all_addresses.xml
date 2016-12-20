@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/LIGHT_BACK">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@color/PrimaryColor"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="match_parent"
+            android:id="@+id/btnBack"
+            android:src="@drawable/icn_back"
+            android:background="@drawable/transparent_click" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtHeader"
+            android:layout_weight="1"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:text="@string/addresses"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mainLayout">
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtAdd"
+                android:text="@string/add_address"
+                android:background="@drawable/white_click"
+                android:textColor="@color/SecondaryColor"
+                android:textSize="@dimen/abc_text_size_menu_material"
+                android:paddingLeft="20dp"
+                android:textStyle="bold"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/addressList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            </ScrollView>
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/progress_bar"
+            android:id="@+id/progressBar" />
+
+        <include
+            layout="@layout/empty_listview"
+            android:id="@+id/empty_View"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>

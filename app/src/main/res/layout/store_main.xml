@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ecomnationmobile.library.Control.SlidingTabLayout
+            android:id="@+id/tabs"
+            android:layout_width="fill_parent"
+            android:background="@color/PrimaryColor"
+            android:layout_height="wrap_content" />
+
+        <com.ecomnationmobile.library.Control.ExtendedViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <include
+        layout="@layout/empty_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/errorLayout" />
+
+    <include
+        layout="@layout/progress_bar"
+        android:layout_width="match_parent"
+        android:id="@+id/progressBar"
+        android:layout_height="match_parent"/>
+</FrameLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LIGHT_BACK">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@color/PrimaryColor"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="match_parent"
+            android:id="@+id/btnBack"
+            android:src="@drawable/icn_back"
+            android:background="@drawable/transparent_click" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtHeader"
+            android:layout_weight="1"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:text="@string/send_inquiry"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" />
+    </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout  android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:showDividers="middle"
+                android:divider="@drawable/vertical_divider">
+
+    <com.ecomnationmobile.library.Control.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"/>
+
+    <com.ecomnationmobile.library.Control.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"/>
+
+    <com.ecomnationmobile.library.Control.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone"/>
+
+    <com.ecomnationmobile.library.Control.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/quantity"/>
+            </LinearLayout>
+        </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_button_min_height_material"
+        android:id="@+id/btnSubmit"
+        android:background="@drawable/button_click"
+        android:textColor="@color/WHITE"
+        android:textStyle="bold"
+        android:textSize="@dimen/abc_text_size_menu_material"
+        android:text="@string/submit"/>
+    </LinearLayout>

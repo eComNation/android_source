@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="has_display_option">true</bool>
+    <bool name="show_favourite_listing">true</bool>
+    <bool name="show_small_description">false</bool>
+    <bool name="show_description">true</bool>
+    <bool name="show_attributes">true</bool>
+    <bool name="registration_mandatory">false</bool>
+    <bool name="show_login_startup">false</bool>
+    <bool name="show_web_home">false</bool>
+    <bool name="show_loader_icon">false</bool>
+
+	<dimen name="list_item_height">250dp</dimen>
+    <dimen name="image_height">360dp</dimen>
+    <dimen name="small_item_height">200dp</dimen>
+    <dimen name="navigation_drawer_width">300dp</dimen>
+
+	<color name="SplashColor">#2B1E1D</color>
+    <color name="DrawerItemBack">#FFFFFF</color>
+    <color name="PrimaryColor">#2B1E1D</color>
+    <color name="FadedPrimaryColor">#635351</color>
+    <color name="PercentageColor">#FF0000</color>
+    <color name="SecondaryColor">#FF8C00</color>
+    <color name="FadedSecondaryColor">#FFA07A</color>
+    <color name="MenuTextColor">#4D4D4D</color>
+    <color name="MenuBackground">#BBBBBB</color>
+    <color name="FooterColor">#00FFFFFF</color>
+    <color name="CopyrightText">#222222</color>
+
+    <!--5651 addwik-->
+    <!--5645 timber-->
+    <!--5628 shubh-->
+    <!--5674 surplus-->
+    <!--5668 abjewels-->
+    <!--5504 hiva-->
+    <string name="store_id">5504</string>
+    <string name="facebook_app_id">257216021302482</string>
+    <string name="server_client_id">687693384766-43kv21kuaadoirvan6r4k3fe7r66m9p9.apps.googleusercontent.com</string>
+    <string name="http">http://</string>
+    <string name="product_url">vg.my39shop.com/products/</string>
+    <string name="production_base_url">http://mygarments.my39shop.com/</string>
+    <string name="store_url">greenobazaar.com</string>
+    <string name="app_name">Chocolate Mantra</string>
+    <string name="scheme">mygarments</string>
+    <string name="sign_up_url">signup.chocolatemantra.com</string>
+    <string name="forgot_password_url">forgotpassword.chocolatemantra.com</string>
+    <string name="pincode_url">http://hiva.my39shop.com/store_data/store_5504/available_pincodes.json</string>
+    <string name="misc_url">http://d27afjhe0vu8x.cloudfront.net/store_5504/</string>
+
+    <string name="copyright_text">© 2015 CHOCOLATE MANTRA. ALL RIGHTS RESERVED.\n\nPowered by eComNation</string>
+
+    <string name="client_id">d377307b92ab44a29fef9e90a4ceba7368ecafe04aa4cece9edc158ba44f1c01</string>
+    <string name="client_secret">c9849f9d313e41f7a61a28659a77f965644646b7d33810e06f32157beb85c9c0</string>
+
+    <string name="facebook_link">https://www.facebook.com/</string>
+    <string name="twitter_link">https://www.twitter.com/</string>
+    <string name="insta_link"></string>
+    <string name="pinterest_link"></string>
+    <string name="youtube_link">https://www.youtube.com/</string>
+    <string name="googleplus_link"></string>
+
+    <string name="support_phone">07940394848</string>
+    <string name="support_email">support@ecomnation.in</string>
+
+    <string name="analytics_tracker">UA-80376498-1</string>
+
+    <string name="description_header">DESCRIPTION</string>
+    <string name="attribute_header">DETAIL</string>
+
+    <string name="store_type">market_place</string>
+
+    <string name="measure_product">7937</string>
+
+    <string name="currency">\u20B9</string>
+
+    <string name="mobile_prefix">+91</string>
+
+    <string name="size_image">Size_chart_Hiva11.jpg</string>
+
+    <string name="pincode_true">COD available at %1$s.</string>
+    <string name="pincode_false">COD not available at %1$s, please pay online.</string>
+    <string name="pincode_null">Delivery not available at %1$s.</string>
+
+    <string-array name="product_detail">
+    </string-array>
+
+    <string-array name="custom_detail">
+        <item>color</item>
+    </string-array>
+
+    <string-array name="tab_keys">
+        <item>collapseTwo</item>
+        <item>collapseThree</item>
+        <item>collapseFour</item>
+    </string-array>
+
+    <string-array name="tab_display">
+        <item>Specs</item>
+        <item>Care</item>
+        <item>Help</item>
+    </string-array>
+
+    <string-array name="customization_options">
+        <item>GOLD</item>
+        <item>DIAMOND</item>
+        <item>GEMSTONE</item>
+        <item>ENGRAVE</item>
+    </string-array>
+
+    <string-array name="sort_criteria">
+        <item>priority</item>
+        <item>title_ascending</item>
+        <item>title_descending</item>
+        <item>price_ascending</item>
+        <item>price_descending</item>
+    </string-array>
+
+    <string-array name="sort_display">
+        <item>Default</item>
+        <item>Title A-Z</item>
+        <item>Title Z-A</item>
+        <item>Price Low-High</item>
+        <item>Price High-Low</item>
+    </string-array>
+
+    <string-array name="category_listing">
+        <item>1423</item>
+    </string-array>
+
+    <string-array name="measure_category">
+        <item>2810</item>
+    </string-array>
+
+    <string-array name="menu_items">
+    </string-array>
+
+    <string-array name="menu_item_urls">
+        <item>terms</item>
+        <item>http://hiva.in/blog</item>
+    </string-array>
+
+</resources>

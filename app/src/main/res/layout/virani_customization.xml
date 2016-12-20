@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:gravity="center_vertical"
+        android:background="@color/PrimaryColor">
+
+        <ImageButton
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="match_parent"
+            android:id="@+id/btnBack"
+            android:src="@drawable/icn_back"
+            android:background="@drawable/transparent_click"/>
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customization"
+            android:id="@+id/totalPrice"
+            android:paddingLeft="20dp"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/abc_text_size_medium_material" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/LIGHT_BACK"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:divider="@drawable/vertical_divider"
+            android:showDividers="middle"
+            android:orientation="vertical">
+
+            <LinearLayout
+                    android:id="@+id/options"
+                    android:layout_width="match_parent"
+                    android:divider="@drawable/dark_horizontal_divider"
+                    android:showDividers="middle"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"/>
+
+            <FrameLayout
+                android:id="@+id/fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/metalBlock"
+                    android:layout_width="match_parent"
+                    android:background="@color/WHITE"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.ecomnationmobile.library.Control.MyTextView
+                        android:padding="10dp"
+                        android:id="@+id/metalHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/PrimaryColorText"
+                        android:textSize="@dimen/text_size_11"
+                        android:text="@string/customization_text"/>
+
+                    <com.ecomnationmobile.library.Control.GridViewWithHeaderAndFooter
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/metalGrid"
+                        android:background="@color/WHITE"
+                        android:choiceMode="singleChoice"
+                        android:padding="10dp"
+                        android:verticalSpacing="10dp"
+                        android:layout_weight="1"
+                        android:horizontalSpacing="10dp"
+                        android:numColumns="4"/>
+
+                    <com.ecomnationmobile.library.Control.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/metalDetails"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/SecondaryColorText"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/abc_text_size_caption_material"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/diamondBlock"
+                    android:layout_width="match_parent"
+                    android:background="@color/WHITE"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.ecomnationmobile.library.Control.MyTextView
+                        android:padding="10dp"
+                        android:id="@+id/diaHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/PrimaryColorText"
+                        android:textSize="@dimen/text_size_11"
+                        android:text="@string/customization_text"/>
+
+                    <com.ecomnationmobile.library.Control.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/primary_stone"
+                        android:textColor="@color/SecondaryColorText"
+                        android:textSize="@dimen/text_size_13"/>
+
+                    <com.ecomnationmobile.library.Control.GridViewWithHeaderAndFooter
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/diaPrimaryGrid"
+                        android:background="@color/WHITE"
+                        android:padding="10dp"
+                        android:verticalSpacing="10dp"
+                        android:layout_weight="1"
+                        android:horizontalSpacing="10dp"
+                        android:numColumns="4"/>
+
+                    <com.ecomnationmobile.library.Control.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/diaSecondaryHeader"
+                        android:gravity="center"
+                        android:textColor="@color/SecondaryColorText"
+                        android:textSize="@dimen/text_size_13"/>
+
+                    <com.ecomnationmobile.library.Control.GridViewWithHeaderAndFooter
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/diaSecondaryGrid"
+                        android:background="@color/WHITE"
+                        android:padding="10dp"
+                        android:verticalSpacing="10dp"
+                        android:horizontalSpacing="10dp"
+                        android:numColumns="4"/>
+
+                    <com.ecomnationmobile.library.Control.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/diaDetails"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/SecondaryColorText"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/abc_text_size_caption_material"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/gemBlock"
+                    android:layout_width="match_parent"
+                    android:background="@color/WHITE"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.ecomnationmobile.library.Control.MyTextView
+                        android:padding="10dp"
+                        android:id="@+id/gemHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/PrimaryColorText"
+                        android:textSize="@dimen/text_size_11"
+                        android:text="@string/customization_text"/>
+
+                    <com.ecomnationmobile.library.Control.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/primary_stone"
+                        android:textColor="@color/SecondaryColorText"
+                        android:textSize="@dimen/text_size_13"/>
+
+                    <com.ecomnationmobile.library.Control.GridViewWithHeaderAndFooter
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/gemPrimaryGrid"
+                        android:background="@color/WHITE"
+                        android:padding="10dp"
+                        android:verticalSpacing="10dp"
+                        android:layout_weight="1"
+                        android:horizontalSpacing="10dp"
+                        android:numColumns="4"/>
+
+                    <com.ecomnationmobile.library.Control.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/gemSecondaryHeader"
+                        android:gravity="center"
+                        android:textColor="@color/SecondaryColorText"
+                        android:textSize="@dimen/text_size_13"/>
+
+                    <com.ecomnationmobile.library.Control.GridViewWithHeaderAndFooter
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/gemSecondaryGrid"
+                        android:background="@color/WHITE"
+                        android:padding="10dp"
+                        android:verticalSpacing="10dp"
+                        android:horizontalSpacing="10dp"
+                        android:numColumns="4"/>
+
+                    <com.ecomnationmobile.library.Control.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/gemDetails"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/SecondaryColorText"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/abc_text_size_caption_material"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/enGraveBlock"
+                        android:layout_width="match_parent"
+                        android:background="@color/WHITE"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <com.ecomnationmobile.library.Control.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/engrave_text"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/abc_text_size_menu_material"
+                            android:textColor="@color/SecondaryColorText"/>
+
+                        <com.ecomnationmobile.library.Control.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/max_engrave"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="@dimen/abc_text_size_caption_material"
+                            android:textColor="@color/SecondaryColorText"/>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/chkEngrave"
+                            android:layout_margin="10dp"
+                            android:textColor="@color/SecondaryColorText"
+                            android:text="@string/engrave"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/engraveLayout"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:padding="10dp"
+                                android:maxLength="25"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/enter_engrave"
+                                android:textColorHint="@color/SecondaryColorText"
+                                android:textCursorDrawable="@drawable/cursor_black"
+                                android:id="@+id/engraveText"
+                                android:textSize="@dimen/abc_text_size_small_material"
+                                android:textColor="@color/PrimaryColorText"
+                                android:background="@drawable/border_transparent"/>
+
+                            <com.ecomnationmobile.library.Control.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/remainingText"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="@dimen/abc_text_size_caption_material"
+                                android:textColor="@color/SecondaryColorText"/>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:padding="10dp"
+                                    android:id="@+id/image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"/>
+
+                                <com.ecomnationmobile.library.Control.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/demoText"
+                                    android:textColor="@color/PrimaryColorText"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/abc_text_size_title_material"
+                                    android:layout_gravity="center"/>
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnFinish"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:text="@string/finish_customization"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/abc_text_size_menu_material"
+            android:textStyle="bold"
+            android:layout_height="@dimen/abc_action_button_min_height_material"
+            android:background="@drawable/button_click"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_click"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/filterSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/simple_click"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/PrimaryColorText"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:textStyle="bold" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/SecondaryColorText"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/dropdown"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/TRANSPARENT"
+            android:src="@drawable/dropdown_arrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/filterList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/WHITE"
+        android:divider="@drawable/vertical_divider"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:showDividers="middle"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+
+</LinearLayout>

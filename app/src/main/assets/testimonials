@@ -1,0 +1,77 @@
+[
+  {
+    "id": 0,
+    "name": "EF-VVS",
+    "image": "dia"
+  },
+  {
+    "id": 0,
+    "name": "GH-VVS",
+    "image": "dia"
+  },
+  {
+      "id": 0,
+      "name": "GH-VS",
+      "image": "dia"
+   },
+   {
+        "id": 0,
+        "name": "GH-SI",
+        "image": "dia"
+   },
+  {
+    "id": 0,
+    "name": "IJ-VS",
+    "image": "dia"
+  },
+  {
+      "id": 0,
+      "name": "IJ-SI",
+      "image": "dia"
+   },
+   {
+        "id": 1,
+        "name": "YELLOW GOLD",
+        "image": "metal"
+   },
+  {
+    "id": 1,
+    "name": "ROSE GOLD",
+    "image": "metal"
+  },
+  {
+      "id": 1,
+      "name": "WHITE GOLD",
+      "image": "metal"
+   },
+   {
+        "id": 2,
+        "name": "RUBY",
+        "image": "ruby"
+   },
+  {
+    "id": 2,
+    "name": "EMERALD",
+    "image": "emerald"
+  },
+  {
+      "id": 2,
+      "name": "BLUE SAPPHIRE",
+      "image": "blue"
+   },
+   {
+        "id": 2,
+        "name": "YELLOW SAPPHIRE",
+        "image": "yellow"
+   },
+  {
+    "id": 3,
+    "name": "14K",
+    "image": "carat"
+  },
+  {
+      "id": 3,
+      "name": "18K",
+      "image": "carat"
+   }
+  ]

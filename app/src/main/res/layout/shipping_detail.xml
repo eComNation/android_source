@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView4" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Where do you want the order delivered?"
+                android:id="@+id/textView19"
+                android:padding="20dp"
+                android:textSize="@dimen/abc_text_size_title_material" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/addressList"
+                android:layout_height="wrap_content"/>
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtAdd"
+                android:text="@string/add_address"
+                android:background="@drawable/white_click"
+                android:textColor="@color/SecondaryColor"
+                android:textSize="@dimen/abc_text_size_menu_material"
+                android:paddingLeft="20dp"
+                android:clickable="true"
+                android:paddingRight="20dp"
+                android:textStyle="bold"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:id="@+id/billingAddress"
+                android:clickable="true"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="@drawable/white_click">
+
+                <com.ecomnationmobile.library.Control.MyTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txtBillingAddress"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/PrimaryColorText" />
+
+                <ToggleButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:clickable="false"
+                    android:textOff=""
+                    android:textOn=""
+                    android:background="@drawable/check_orange"
+                    android:id="@+id/pickButton" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/selectBillAddress"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/billAddressList"
+                    android:layout_height="wrap_content"/>
+
+                <com.ecomnationmobile.library.Control.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtAddBill"
+                    android:text="@string/add_billing_address"
+                    android:background="@drawable/white_click"
+                    android:textColor="@color/SecondaryColor"
+                    android:textSize="@dimen/abc_text_size_menu_material"
+                    android:paddingLeft="20dp"
+                    android:clickable="true"
+                    android:paddingRight="20dp"
+                    android:textStyle="bold"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp" />
+            </LinearLayout>
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_shipping"
+                android:id="@+id/textView20"
+                android:textSize="@dimen/abc_text_size_title_material"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:id="@+id/shippingList"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@color/PrimaryColor"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="match_parent"
+            android:id="@+id/btnBack"
+            android:src="@drawable/icn_back"
+            android:background="@drawable/transparent_click" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/txtAddressHeader"
+            android:textColor="@color/WHITE"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:paddingLeft="20dp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:animateLayoutChanges="true"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/scrollAddress"
+        android:layout_weight="1"
+        android:background="@color/WHITE">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/address_detail" />
+    </ScrollView>
+        <com.ecomnationmobile.library.Control.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_button_min_height_material"
+        android:id="@+id/txtSaveAddress"
+        android:background="@drawable/button_click"
+        android:text="@string/save"
+        android:gravity="center"
+        android:textColor="@color/WHITE"
+        android:textStyle="bold"
+        android:textSize="@dimen/abc_text_size_menu_material" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/progress_bar"
+        android:id="@+id/progressBar" />
+
+    <include
+        layout="@layout/empty_listview"
+        android:id="@+id/empty_View"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</LinearLayout>

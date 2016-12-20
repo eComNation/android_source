@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/border_white"
+        android:orientation="horizontal">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/couponType"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:textColor="@color/SecondaryColorText"
+            android:textSize="@dimen/abc_text_size_caption_material"/>
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/couponCode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:padding="12dp"
+            android:gravity="center"
+            android:textColor="@color/PrimaryColorText"
+            android:textSize="@dimen/abc_text_size_small_material"/>
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/removeCoupon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/simple_click"
+            android:clickable="true"
+            android:padding="12dp"
+            android:text="@string/remove"
+            android:textColor="@color/DARK_ORANGE"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</FrameLayout>

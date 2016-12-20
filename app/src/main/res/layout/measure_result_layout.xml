@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <com.ecomnationmobile.library.Control.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SELECT QUANTITY"
+        android:padding="5dp"
+        android:textSize="@dimen/abc_text_size_menu_material" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/border_white"
+        android:orientation="vertical">
+
+        <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/WHITE">
+
+        <ImageView
+            android:id="@+id/imgCategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:padding="10dp" />
+
+        <include
+            android:id="@+id/image_progress"
+            layout="@layout/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:id="@+id/productName"/>
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity"
+            android:padding="15dp"
+            android:textColor="@color/SecondaryColorText"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:background="@color/WHITE">
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="@string/minus"
+                android:background="@drawable/white_click"
+                android:textSize="@dimen/abc_text_size_menu_material"
+                android:textColor="@color/BLACK"
+                android:id="@+id/btnSubtract"/>
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtQty"
+                android:textSize="@dimen/abc_text_size_menu_material"
+                android:text="@string/one"
+                android:textColor="@color/PrimaryColorText"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="@string/plus"
+                android:background="@drawable/white_click"
+                android:textSize="@dimen/abc_text_size_menu_material"
+                android:textColor="@color/BLACK"
+                android:id="@+id/btnAdd"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_click"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/WHITE"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:textStyle="bold"
+        android:text="@string/buy_now"/>
+
+</LinearLayout>

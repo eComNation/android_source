@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@color/PrimaryColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="match_parent"
+            android:background="@drawable/transparent_click"
+            android:src="@drawable/icn_back" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btnShare"
+            android:layout_width="@dimen/abc_action_button_min_height_material"
+            android:layout_height="match_parent"
+            android:background="@drawable/transparent_click"
+            android:src="@drawable/share" />
+
+        <ImageButton
+            android:id="@+id/addFavourite"
+            android:layout_width="@dimen/abc_action_button_min_height_material"
+            android:layout_height="match_parent"
+            android:background="@drawable/transparent_click"
+            android:src="@drawable/white_heart" />
+
+        <ImageButton
+            android:id="@+id/cart"
+            android:layout_width="@dimen/abc_action_button_min_height_material"
+            android:layout_height="match_parent"
+            android:background="@drawable/transparent_click"
+            android:src="@drawable/cart_drawable" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/LIGHT_BACK"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/WHITE"
+                        android:orientation="vertical"
+                        android:divider="@drawable/vertical_divider"
+                        android:showDividers="end">
+
+                        <com.ecomnationmobile.library.Control.ImageControl
+                            android:id="@+id/imageControl"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/image_height"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingTop="10dp">
+
+                            <com.ecomnationmobile.library.Control.MyTextView
+                                android:id="@+id/txtProductName"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textColor="@color/PrimaryColorText"
+                                android:textSize="@dimen/abc_text_size_title_material" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/priceBlock"
+                                android:gravity="center"
+                                android:paddingTop="10dp"
+                                android:orientation="horizontal">
+
+                                <Space
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1" />
+
+                                <com.ecomnationmobile.library.Control.MyTextView
+                                    android:id="@+id/txtPrice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:gravity="center"
+                                    android:textColor="@color/BLACK"
+                                    android:textSize="@dimen/abc_text_size_medium_material"
+                                    android:textStyle="bold" />
+
+                                <com.ecomnationmobile.library.Control.MyTextView
+                                    android:id="@+id/txtShipPrice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="gone"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:gravity="center"
+                                    android:textColor="@color/SecondaryColorText"
+                                    android:textSize="@dimen/abc_text_size_small_material" />
+
+                                <com.ecomnationmobile.library.Control.MyTextView
+                                    android:id="@+id/txtOldPrice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:gravity="center"
+                                    android:textColor="@color/SecondaryColorText"
+                                    android:textSize="@dimen/abc_text_size_small_material"
+                                    android:visibility="gone" />
+
+                                <com.ecomnationmobile.library.Control.MyTextView
+                                    android:id="@+id/txtDiscount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:gravity="center"
+                                    android:textColor="@color/PercentageColor"
+                                    android:textSize="@dimen/abc_text_size_caption_material"
+                                    android:visibility="gone" />
+
+                                <com.ecomnationmobile.library.Control.MyTextView
+                                    android:id="@+id/txtStock"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:gravity="center"
+                                    android:textColor="@color/SecondaryColor"
+                                    android:textSize="@dimen/abc_text_size_caption_material"
+                                    android:visibility="gone" />
+
+                                <Space
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:paddingTop="10dp"
+                                android:orientation="horizontal">
+
+                                <com.ecomnationmobile.library.Control.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/sku"
+                                    android:textSize="@dimen/abc_text_size_small_material"
+                                    android:layout_marginRight="5dp"
+                                    android:textColor="@color/SecondaryColorText"/>
+
+                                <com.ecomnationmobile.library.Control.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/skuValue"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/abc_text_size_small_material"
+                                    android:textColor="@color/PrimaryColorText"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:id="@+id/soldByBlock"
+                                android:paddingTop="10dp"
+                                android:orientation="horizontal">
+
+                                <com.ecomnationmobile.library.Control.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/sold_by"
+                                    android:textSize="@dimen/abc_text_size_small_material"
+                                    android:layout_marginRight="5dp"
+                                    android:textColor="@color/SecondaryColorText"/>
+
+                                <com.ecomnationmobile.library.Control.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/sellerName"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/abc_text_size_small_material"
+                                    android:textColor="@color/PrimaryColorText"/>
+
+                            </LinearLayout>
+
+                            <com.ecomnationmobile.library.Control.MyTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="10dp"
+                                android:id="@+id/noSellers"
+                                android:text="@string/no_sellers"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/abc_text_size_small_material"
+                                android:textColor="@color/INDIAN_RED"/>
+
+                        </LinearLayout>
+
+                        <com.ecomnationmobile.library.Control.SizeSelector
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sizeSelector"/>
+
+                        <com.ecomnationmobile.library.Control.ColorSelector
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/colorSelector"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:background="@color/WHITE">
+
+                            <com.ecomnationmobile.library.Control.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/quantity"
+                                android:padding="15dp"
+                                android:textColor="@color/SecondaryColorText"
+                                android:textSize="@dimen/abc_text_size_menu_material" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:gravity="center"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="10dp"
+                                android:background="@color/WHITE">
+                                <Button
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:gravity="center"
+                                    android:text="@string/minus"
+                                    android:background="@drawable/white_click"
+                                    android:textSize="@dimen/abc_text_size_menu_material"
+                                    android:textColor="@color/BLACK"
+                                    android:id="@+id/btnSubtract"/>
+
+                                <com.ecomnationmobile.library.Control.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtQty"
+                                    android:textSize="@dimen/abc_text_size_medium_material"
+                                    android:text="@string/one"
+                                    android:textColor="@color/PrimaryColorText"
+                                    android:gravity="center"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp" />
+
+                                <Button
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:gravity="center"
+                                    android:text="@string/plus"
+                                    android:background="@drawable/white_click"
+                                    android:textSize="@dimen/abc_text_size_menu_material"
+                                    android:textColor="@color/BLACK"
+                                    android:id="@+id/btnAdd"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <com.ecomnationmobile.library.Control.VendorSelector
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:id="@+id/vendorBlock"/>
+
+                    </LinearLayout>
+
+                    <com.ecomnationmobile.library.Control.PinCodeChecker
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pincodeBlock"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:animateLayoutChanges="true"
+                        android:showDividers="beginning|middle|end"
+                        android:divider="@drawable/vertical_divider"
+                        android:orientation="vertical">
+
+                        <com.ecomnationmobile.library.Control.SlidingTabLayout
+                            android:id="@+id/tabs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/WHITE" />
+
+                        <com.ecomnationmobile.library.Control.WrapContentHeightViewPager
+                            android:id="@+id/pager"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <com.ecomnationmobile.library.Control.ReviewControl
+                        android:id="@+id/reviewControl"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <com.ecomnationmobile.library.Control.ProductListControl
+                        android:id="@+id/productListControl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:showDividers="middle"
+                android:divider="@drawable/horizontal_divider"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAddToCart"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/abc_action_button_min_height_material"
+                    android:text="@string/add_cart"
+                    android:background="@drawable/button_click"
+                    android:textColor="@color/WHITE"
+                    android:textSize="@dimen/abc_text_size_menu_material"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnBuy"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/abc_action_button_min_height_material"
+                    android:text="@string/buy_now"
+                    android:background="@drawable/button_click_3"
+                    android:textColor="@color/WHITE"
+                    android:textSize="@dimen/abc_text_size_menu_material"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/empty_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/errorLayout" />
+
+        <include
+            layout="@layout/progress_bar"
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</LinearLayout>

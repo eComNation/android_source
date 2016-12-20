@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LIGHT_BACK">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@color/PrimaryColor">
+
+        <ImageButton
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="match_parent"
+            android:id="@+id/btnBack"
+            android:src="@drawable/icn_back"
+            android:background="@drawable/transparent_click"
+            android:padding="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/editSearch"
+            android:background="@color/TRANSPARENT"
+            android:hint="@string/product_search"
+            android:textColorHint="@color/TRANSLUCENT"
+            android:layout_weight="1"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/abc_text_size_menu_material"
+            android:paddingLeft="20dp" />
+
+        <ImageButton
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="match_parent"
+            android:id="@+id/btnSearch"
+            android:background="@drawable/transparent_click"
+            android:src="@drawable/clear" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/WHITE">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/WHITE"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@color/WHITE">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/recent"/>
+
+                <com.ecomnationmobile.library.Control.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recent_search"
+                    android:textColor="@color/SecondaryColorText"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp" />
+
+                <com.ecomnationmobile.library.Control.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clear_all"
+                    android:id="@+id/txtClear"
+                    android:clickable="true"
+                    android:background="@drawable/simple_click"
+                    android:textColor="@color/SecondaryColorText"
+                    android:textSize="@dimen/abc_text_size_caption_material"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/WHITE"
+                android:divider="@drawable/vertical_divider"
+                android:showDividers="middle|end"
+                android:id="@+id/recentSearchList"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

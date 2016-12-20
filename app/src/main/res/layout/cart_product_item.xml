@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/product_image" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/txtSKU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/SecondaryColorText"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/txtProductName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textColor="@color/PrimaryColorText"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/txtCustomDetails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="1dp"
+            android:gravity="left"
+            android:visibility="gone"
+            android:textColor="@color/SecondaryColorText"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:id="@+id/lblQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qty"
+                android:layout_marginRight="2dp"
+                android:textColor="@color/SecondaryColorText"
+                android:textSize="@dimen/abc_text_size_caption_material" />
+
+            <Button
+                android:id="@+id/btnSubtract"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/white_click"
+                android:gravity="center"
+                android:text="@string/minus"
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/abc_text_size_caption_material" />
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:id="@+id/txtQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/one"
+                android:textColor="@color/PrimaryColorText"
+                android:textSize="@dimen/abc_text_size_small_material" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/white_click"
+                android:gravity="center"
+                android:text="@string/plus"
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/abc_text_size_caption_material" />
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:id="@+id/txtOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/INDIAN_RED"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:gravity="right|bottom"
+        android:orientation="vertical">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/txtDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/PercentageColor"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:visibility="invisible" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/PrimaryColorText"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:textStyle="bold" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/txtOldPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/SecondaryColorText"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:visibility="invisible" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/txtRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/simple_click"
+            android:clickable="true"
+            android:padding="5dp"
+            android:text="@string/remove_cart"
+            android:textColor="@color/GRAY"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+    </LinearLayout>
+</LinearLayout>

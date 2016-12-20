@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"
+        android:background="@drawable/border_translucent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@drawable/green_back"
+                android:textSize="@dimen/abc_text_size_caption_material"
+                android:textColor="@color/WHITE"
+                android:layout_marginRight="10dp"/>
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textStyle="bold"
+                android:textColor="@color/PrimaryColorText"/>
+
+        </LinearLayout>
+
+        <com.ecomnationmobile.library.Control.CollapsibleText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:textColor="@color/PrimaryColorText"
+            android:id="@+id/content"/>
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:textColor="@color/SecondaryColorText"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:background="@drawable/transparent_click"
+        android:padding="10dp"
+        android:src="@drawable/options" />
+
+</FrameLayout>

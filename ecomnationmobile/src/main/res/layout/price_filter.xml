@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/white_click"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/filterSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/simple_click"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/PrimaryColorText"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:textStyle="bold" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/SecondaryColorText"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/dropdown"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/TRANSPARENT"
+            android:src="@drawable/dropdown_arrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/filterList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/WHITE"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarHolder"
+            android:orientation="vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:id="@+id/minText"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textColor="@color/PrimaryColorText"
+                android:background="@drawable/disable_back"/>
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:id="@+id/maxText"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textColor="@color/PrimaryColorText"
+                android:background="@drawable/disable_back"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

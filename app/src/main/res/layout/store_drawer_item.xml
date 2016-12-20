@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawer_click">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/drawer_icon"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:visibility="gone"
+        android:paddingBottom="15dp" />
+
+    <com.ecomnationmobile.library.Control.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/drawer_title"
+        android:layout_weight="1"
+        android:paddingLeft="20dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/MenuTextColor"
+        android:textSize="@dimen/abc_text_size_menu_material" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rightArrow"
+        android:src="@drawable/sidearrow"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp" />
+
+</LinearLayout>

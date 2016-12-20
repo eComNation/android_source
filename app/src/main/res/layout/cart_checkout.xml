@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:animateLayoutChanges="true"
+        android:gravity="center_vertical"
+        android:background="@color/PrimaryColor">
+
+        <ImageButton
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="match_parent"
+            android:id="@+id/btnBack"
+            android:background="@drawable/transparent_click"
+            android:src="@drawable/icn_back" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/cart_header"
+            android:id="@+id/txtCart"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/abc_text_size_small_material"/>
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/checkout"
+            android:layout_weight="1"
+            android:id="@+id/txtShipping"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/payment"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:id="@+id/txtPayment"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/placeholder"
+        android:layout_weight="1" />
+
+    <com.ecomnationmobile.library.Control.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_button_min_height_material"
+        android:background="@drawable/button_click"
+        android:textSize="@dimen/abc_text_size_menu_material"
+        android:id="@+id/txtAction"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:gravity="center"
+        android:textColor="@color/WHITE"
+        android:visibility="gone" />
+
+</LinearLayout>

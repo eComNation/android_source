@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/simple_click"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/drawer_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.ecomnationmobile.library.Control.MyTextView
+        android:id="@+id/drawer_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/abc_text_size_menu_material"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/PrimaryColorText" />
+
+</LinearLayout>

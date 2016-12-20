@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@color/PrimaryColor"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="match_parent"
+            android:id="@+id/btnBack"
+            android:src="@drawable/icn_back"
+            android:background="@drawable/transparent_click" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtHeader"
+            android:layout_weight="1"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:text="@string/filter_by"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:id="@+id/reset"
+            android:textColor="@color/WHITE"
+            android:text="@string/reset_all"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:background="@drawable/transparent_click"
+            android:textSize="@dimen/text_size_11" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/filters"
+        android:background="@color/LIGHT_BACK"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    </ScrollView>
+
+    <com.ecomnationmobile.library.Control.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_button_min_height_material"
+        android:text="@string/apply_filter"
+        android:id="@+id/txtApplyFilter"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:textColor="@color/WHITE"
+        android:textSize="@dimen/abc_text_size_menu_material"
+        android:background="@drawable/button_click"
+        android:gravity="center" />
+
+</LinearLayout>

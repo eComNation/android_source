@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:background="@drawable/drawer_click"
+    android:orientation="horizontal" >
+
+    <com.ecomnationmobile.library.Control.MyTextView
+        android:id="@+id/lblListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/abc_text_size_menu_material"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="40dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical" />
+
+    <ToggleButton
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/imageButton"
+        android:textOn=""
+        android:textOff=""
+        android:background="@drawable/check_orange"
+        android:layout_marginRight="40dp"
+        android:gravity="center" />
+
+</LinearLayout>

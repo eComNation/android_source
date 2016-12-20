@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ecomnationmobile.library.Control.MyTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/abc_text_size_caption_material"
+    android:gravity="center_vertical"
+    android:drawableRight="@drawable/dropdown_arrow"
+    android:textColor="@color/PrimaryColorText" />

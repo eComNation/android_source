@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1063005504137",
+    "project_id": "firebase-store-app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1063005504137:android:92e8410cfef91299",
+        "android_client_info": {
+          "package_name": "com.ecomnationmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1063005504137-i1a1rg1d1k15ea7d45ussimit2cgf0m5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ecomnationmobile",
+            "certificate_hash": "AB3F0593E48E3B694A98AB079514AE74374436AF"
+          }
+        },
+        {
+          "client_id": "1063005504137-1r0gblghqdhhaup3kto9vpanjbcdhsn6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-T7H8YGXq3XR2baX5A564BOWdqCYEn2w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

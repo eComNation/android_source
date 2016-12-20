@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:gravity="center_vertical"
+        android:background="@color/PrimaryColor">
+
+        <ImageButton
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:id="@+id/btnBack"
+            android:background="@drawable/transparent_click"
+            android:src="@drawable/icn_back"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/dotsLayout"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:background="@color/TRANSPARENT"
+            android:orientation="horizontal"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ecomnationmobile.library.Control.ExtendedViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:id="@+id/btnNext"
+            android:layout_gravity="center|right"
+            android:background="@color/LessTranslucent"
+            android:src="@drawable/sidearrow"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:id="@+id/btnPrev"
+            android:layout_gravity="center|left"
+            android:background="@color/LessTranslucent"
+            android:src="@drawable/sidearrow_back"/>
+
+    </FrameLayout>
+
+</LinearLayout>

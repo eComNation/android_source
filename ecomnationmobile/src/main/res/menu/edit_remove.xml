@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/edit"
+        android:title="Edit"
+        app:showAsAction="withText|ifRoom"/>
+    <item android:id="@+id/remove"
+        android:title="Remove"
+        app:showAsAction="withText|ifRoom" />
+</menu>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/WHITE">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:divider="@drawable/horizontal_divider"
+            android:showDividers="middle"
+            android:orientation="horizontal">
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/availability"
+                android:textColor="@color/PrimaryColorText"
+                android:textSize="@dimen/abc_text_size_small_material" />
+
+            <EditText
+                android:id="@+id/pinCodeText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_weight="1"
+                android:cursorVisible="true"
+                android:padding="12dp"
+                android:inputType="number"
+                android:hint="@string/pincode_hint"
+                android:textColorHint="@color/SecondaryColorText"
+                android:textColor="@color/PrimaryColorText"
+                android:textCursorDrawable="@drawable/cursor_black"
+                android:textSize="@dimen/abc_text_size_small_material"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/check"
+                android:background="@drawable/simple_click"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:id="@+id/btnCheck"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:id="@+id/pinCodeMessage"
+            android:background="@color/WHITE"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/PrimaryColorText"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:layout_weight="1"
+                android:id="@+id/txtMessage"/>
+            <ImageButton
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clear"
+                android:background="@drawable/simple_click"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+    </FrameLayout>

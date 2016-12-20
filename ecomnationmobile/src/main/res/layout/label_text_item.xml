@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/WHITE"
+    android:orientation="vertical"
+    android:paddingTop="5dp">
+
+    <com.ecomnationmobile.library.Control.MyTextView
+        android:id="@+id/txtLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/SecondaryColorText"
+        android:textSize="@dimen/abc_text_size_caption_material" />
+
+    <EditText
+        android:id="@+id/txtText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/TRANSPARENT"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="none"
+        android:textColor="@color/PrimaryColorText"
+        android:textCursorDrawable="@drawable/cursor_black"
+        android:textSize="@dimen/abc_text_size_small_material" />
+
+</LinearLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent">
+
+    <com.ecomnationmobile.library.Common.ExtendedScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/LIGHT_BACK">
+
+            <FrameLayout
+                android:id="@+id/slidingBanners"
+                android:layout_width="match_parent"
+                android:paddingBottom="3dp"
+                android:layout_height="wrap_content">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/indicator"
+                    android:layout_gravity="bottom"
+                    android:gravity="center_horizontal"/>
+            </FrameLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/categoryBanners"
+            android:paddingBottom="3dp"
+            android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:background="@color/LIGHT_BACK" >
+
+                <com.ecomnationmobile.library.Control.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/testimonials"
+                    android:id="@+id/textView10"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="40dp"
+                    android:textSize="@dimen/abc_text_size_menu_material"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/PrimaryColorText"
+                    android:textStyle="bold" />
+
+                <com.ecomnationmobile.library.Control.MyTextView
+                    android:layout_width="60dp"
+                    android:layout_height="1dp"
+                    android:id="@+id/textView11"
+                    android:background="@color/PrimaryColorText" />
+
+                <ViewFlipper
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewFlipTestimonials"
+                    android:layout_gravity="right" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <com.ecomnationmobile.library.Control.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:id="@+id/textView12"
+                        android:textSize="@dimen/abc_text_size_menu_material"
+                        android:textColor="@color/PrimaryColorText"
+                        android:singleLine="false"
+                        android:padding="30dp"
+                        android:gravity="center" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imageView8"
+                            android:baselineAlignBottom="false"
+                            android:background="@drawable/padding" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView7"
+                            android:layout_gravity="center" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView9"
+                            android:layout_gravity="center"
+                            android:src="@drawable/cover1" />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/WHITE"
+                        android:focusableInTouchMode="false"
+                        android:padding="10dp">
+
+                        <com.ecomnationmobile.library.Control.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/PrimaryColorText"
+                            android:id="@+id/textView27"
+                            android:layout_gravity="center"
+                            android:textStyle="bold" />
+
+                        <com.ecomnationmobile.library.Control.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/PrimaryColorText"
+                            android:id="@+id/textView28"
+                            android:layout_gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:background="@color/FooterColor"
+                android:paddingTop="5dp"
+                android:paddingBottom="20dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:id="@+id/imgFacebook"
+                        android:background="@drawable/transparent_click"
+                        android:src="@drawable/social_facebook" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imgTwitter"
+                        android:padding="10dp"
+                        android:background="@drawable/transparent_click"
+                        android:src="@drawable/social_twitter" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:id="@+id/imgInstagram"
+                        android:background="@drawable/transparent_click"
+                        android:src="@drawable/social_instagram" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imgPinterest"
+                        android:padding="10dp"
+                        android:background="@drawable/transparent_click"
+                        android:src="@drawable/social_pinterest" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imgYoutube"
+                        android:padding="10dp"
+                        android:background="@drawable/transparent_click"
+                        android:src="@drawable/social_youtube" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imgGoogleplus"
+                        android:padding="10dp"
+                        android:background="@drawable/transparent_click"
+                        android:src="@drawable/social_googleplus" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/imageStoreLogo"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/store_logo" />
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_10"
+                android:gravity="center"
+                android:text="@string/copyright_text"
+                android:textColor="@color/CopyrightText"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </com.ecomnationmobile.library.Common.ExtendedScrollView>
+
+    <include
+        layout="@layout/empty_listview"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:id="@+id/errorLayout" />
+
+    <include
+        layout="@layout/progress_bar"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:id="@+id/progressBar" />
+
+</FrameLayout>

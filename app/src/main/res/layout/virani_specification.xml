@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:divider="@drawable/vertical_divider"
+    android:showDividers="middle"
+    android:background="@color/WHITE"
+    android:layout_height="match_parent">
+
+    <com.ecomnationmobile.library.Control.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/PrimaryColorText"
+        android:textStyle="bold"
+        android:text="@string/product_details_small"
+        android:background="@color/LIGHT_GREY"
+        android:textSize="@dimen/text_size_13"
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"/>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:text="@string/product_code_small"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/productCode"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:text="@string/approx_prod_weight"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/totalWeight"
+            android:gravity="right"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.ecomnationmobile.library.Control.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/PrimaryColorText"
+        android:textSize="@dimen/abc_text_size_caption_material"
+        android:text="@string/primary_stone"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"/>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:text="@string/total_diamonds"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/diamondCount"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:text="@string/total_diamond_weight"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/diamondWeight"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:text="@string/diamond_quality"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/diamondQuality"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:text="@string/shape"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/diamondShape"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.ecomnationmobile.library.Control.MyTextView
+        android:text="@string/stone_details"
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:layout_weight="1"
+        android:textColor="@color/PrimaryColorText"
+        android:background="@color/LIGHT_GREY"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/text_size_13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.ecomnationmobile.library.Control.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/PrimaryColorText"
+        android:textSize="@dimen/abc_text_size_caption_material"
+        android:text="@string/primary_stone"
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"/>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/txtPrimaryDiamonds"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/txtPrimaryWeight"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/txtPrimaryPrice"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/secondaryBlock"
+        android:divider="@drawable/vertical_divider"
+        android:showDividers="middle"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/PrimaryColorText"
+            android:text="@string/secondary_stone"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:padding="5dp"/>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:id="@+id/txtSecondaryDiamonds"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textSize="@dimen/abc_text_size_caption_material"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:id="@+id/txtSecondaryWeight"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/abc_text_size_caption_material"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.ecomnationmobile.library.Control.MyTextView
+                android:id="@+id/txtSecondaryPrice"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="@dimen/abc_text_size_caption_material"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.ecomnationmobile.library.Control.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/PrimaryColorText"
+        android:textStyle="bold"
+        android:background="@color/LIGHT_GREY"
+        android:text="@string/metal_details_small"
+        android:textSize="@dimen/text_size_13"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"/>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:text="@string/gold_small"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/goldType"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:text="@string/size_small"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/goldSize"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:text="@string/rate_per_gm"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/goldRate"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:text="@string/weight_small"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/goldWeight"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:text="@string/price"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/goldPrice"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.ecomnationmobile.library.Control.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/PrimaryColorText"
+        android:background="@color/LIGHT_GREY"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_13"
+        android:layout_marginTop="10dp"
+        android:text="@string/making_details_small"
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"/>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:text="@string/setting_type"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/makeType"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:text="@string/you_pay_only"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/makePrice"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:background="@color/LIGHT_GREY"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:text="@string/grand_total_small"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/PrimaryColorText"
+            android:gravity="left"
+            android:textSize="@dimen/text_size_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.ecomnationmobile.library.Control.MyTextView
+            android:id="@+id/grandTotal"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="@dimen/text_size_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
