@@ -1,7 +1,7 @@
 # eComNation Store App
 An android app for ecommerce store. 
 
-* Picasso
+## Picasso
 Library used for downloading and caching images throughout the app.
 
 # Volley
